@@ -1,0 +1,53 @@
+{
+  "name": "client-2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --webpack",
+    "build": "next build --webpack",
+    "start": "next start",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.3.4",
+    "@radix-ui/react-accordion": "^1.1.2",
+    "@radix-ui/react-dialog": "^1.0.5",
+    "@radix-ui/react-label": "^2.0.2",
+    "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-switch": "^1.0.3",
+    "@radix-ui/react-tabs": "^1.0.4",
+    "@rainbow-me/rainbowkit": "^2.2.9",
+    "@react-leaflet/core": "^3.0.0",
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-spring/web": "^10.0.3",
+    "@tanstack/react-query": "^5.90.5",
+    "class-variance-authority": "^0.7.0",
+    "framer-motion": "^12.23.24",
+    "leaflet": "^1.9.4",
+    "leaflet-draw": "^1.0.4",
+    "leaflet-geosearch": "^4.2.2",
+    "lodash.debounce": "^4.0.8",
+    "lucide-react": "^0.454.0",
+    "next": "16.0.1",
+    "pino-pretty": "^13.1.2",
+    "react": "19.0.0-rc-69d4b800-20241021",
+    "react-dom": "19.0.0-rc-69d4b800-20241021",
+    "react-hook-form": "^7.51.3",
+    "react-icons": "^5.1.0",
+    "react-leaflet": "v5.0.0-rc.1",
+    "react-leaflet-cluster": "^2.1.0",
+    "react-leaflet-draw": "^0.20.4",
+    "tailwind-merge": "^2.2.2",
+    "tailwindcss-animate": "^1.0.7",
+    "viem": "^2.38.5",
+    "wagmi": "^2.19.1",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "babel-plugin-react-compiler": "1.0.0",
+    "eslint": "^9",
+    "eslint-config-next": "16.0.1",
+    "tailwindcss": "^4"
+  }
+}

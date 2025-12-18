@@ -1,0 +1,56 @@
+
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Map-specific overrides to ensure controls and UI text are visible
+   regardless of the page-level theme. This forces readable dark text
+   on map controls, popups and sidebar elements. */
+#map-container, #map-container * {
+  color: #111 !important;
+}
+
+/* Leaflet control styling: make buttons and links dark on a light
+   translucent background so they are readable on any basemap. */
+.leaflet-control, .leaflet-bar {
+  background: rgba(255,255,255,0.9) !important;
+  color: #111 !important;
+}
+.leaflet-control a, .leaflet-control button, .leaflet-bar a, .leaflet-bar button {
+  color: #111 !important;
+}
+
+/* GeoSearch control specific tweaks */
+.leaflet-control .leaflet-control-geosearch { 
+  background: rgba(255,255,255,0.95) !important;
+  color: #111 !important;
+}
+
+/* Ensure popups and tooltips are readable */
+.leaflet-popup-content, .leaflet-tooltip {
+  color: #111 !important;
+}
+
